@@ -1,0 +1,151 @@
+:root {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #f1d302;
+}
+
+:root li {
+    color: black;
+    font-weight: bold;
+}
+
+.html {
+    margin: 0;
+    padding: 0;
+}
+
+.heroContainer {
+    height: 40vh;
+}
+
+
+.playlistContainer {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    height: auto;
+}
+
+.playlistMain {
+    background-color: #235789;
+    width: 100%;
+    margin: 0;
+}
+
+.playlistRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist {
+    margin: 10px;
+}
+
+:root h3 {
+    font-style: italic;
+}
+
+.navtop {
+    height: 50px;
+}
+
+.navbar {
+    height: 70px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbarLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarLinks ul {
+    display: flex;
+}
+
+.navbarLinks li {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+.heroPicture {
+    padding: 40px;
+
+}
+
+.boxshadow {
+    -webkit-box-shadow: 28px 28px 28px -11px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 28px 28px 28px -11px rgba(0, 0, 0, 1);
+    box-shadow: 28px 28px 28px -11px rgba(0, 0, 0, 1);
+}
+
+
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.heroContainer {
+    display: flex;
+    padding: 50px;
+    padding-bottom: 80px;
+    justify-content: space-around;
+    background-color: #ed1c24;
+
+}
+
+.heroText {
+    text-align: right;
+}
+
+.enlargeImg :hover {
+    transform: scale(1.1);
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+/* CSS */
+.button-24 {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+.button-24:active {
+    opacity: .5;
+}
