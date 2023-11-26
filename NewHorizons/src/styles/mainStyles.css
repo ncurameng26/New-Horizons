@@ -13,6 +13,12 @@
 
 .heroContainer h1 {
     font-size: 50px;
+    color: var(--green)
+}
+
+.heroContainer h2 {
+    font-size: 30px;
+    color: var(--beige)
 }
 
 :root li {
@@ -145,12 +151,12 @@
 
 /* CSS */
 .button-24 {
-    background: var(--purple);
-    border: 1px solid black;
+    background: var(--beige);
+    border: 1px solid var(--lime);
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: black;
     cursor: pointer;
     display: inline-block;
     font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
@@ -173,7 +179,7 @@
 .button-24:active {
     background-color: initial;
     background-position: 0 0;
-    color: #FF4742;
+    color: var(--green);
     transform: scale(1.2);
     transition-duration: 1.2s;
 }
