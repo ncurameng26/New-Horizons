@@ -1,8 +1,18 @@
 :root {
     margin: 0;
     padding: 0;
-    color: white;
-    background-color: #f1d302;
+    color: var(--green);
+
+    --purple: rgb(150, 134, 158);
+    --orange: rgb(227, 156, 88);
+    --beige: rgb(234, 222, 203);
+    --lime: rgb(175, 176, 114);
+    --green: rgb(71, 71, 45);
+
+}
+
+.heroContainer h1 {
+    font-size: 50px;
 }
 
 :root li {
@@ -15,7 +25,18 @@
     padding: 0;
 }
 
+.card .largeImage {
+    height: 300px;
+    width: 300px;
+}
+
+
 .heroContainer {
+    height: 40vh;
+    padding: 50px;
+}
+
+.SecondHeroContainer {
     height: 40vh;
 }
 
@@ -28,7 +49,7 @@
 }
 
 .playlistMain {
-    background-color: #235789;
+    background-color: var(--beige);
     width: 100%;
     margin: 0;
 }
@@ -40,45 +61,29 @@
 
 .playlist {
     margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.HeroPlaylist {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
 }
 
 :root h3 {
     font-style: italic;
 }
 
-.navtop {
-    height: 50px;
-}
-
-.navbar {
-    height: 70px;
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.navbarLinks {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbarLinks ul {
-    display: flex;
-}
-
-.navbarLinks li {
-    display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
-
-}
-
-
 .heroPicture {
-    padding: 40px;
-
+    padding-left: 30px;
 }
+
+
+
+
 
 .boxshadow {
     -webkit-box-shadow: 28px 28px 28px -11px rgba(0, 0, 0, 1);
@@ -88,24 +93,49 @@
 
 
 
-.navbarContainer {
-    display: flex;
-    justify-content: space-between;
-
-}
-
 .heroContainer {
     display: flex;
-    padding: 50px;
     padding-bottom: 80px;
     justify-content: space-around;
-    background-color: #ed1c24;
+    background-color: var(--lime);
 
 }
+
+.SecondHeroContainer {
+    padding: 50px;
+    padding-bottom: 80px;
+    background-color: var(--lime);
+}
+
+.SecondHeroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.SecondHeroContainer h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.SecondHeroContainer h2 {
+    text-align: center;
+}
+
 
 .heroText {
     text-align: right;
+    margin-left: 10%;
+    margin-right: 20%;
 }
+
+.heroText h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+
 
 .enlargeImg :hover {
     transform: scale(1.1);
@@ -115,8 +145,8 @@
 
 /* CSS */
 .button-24 {
-    background: #FF4742;
-    border: 1px solid #FF4742;
+    background: var(--purple);
+    border: 1px solid black;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
@@ -144,8 +174,142 @@
     background-color: initial;
     background-position: 0 0;
     color: #FF4742;
+    transform: scale(1.2);
+    transition-duration: 1.2s;
 }
 
 .button-24:active {
     opacity: .5;
+}
+
+
+
+@media all and (max-width: 1400px) {
+    .heroContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+        height: auto;
+        padding-bottom: 200px;
+    }
+
+    .playlistMain {
+        height: auto;
+    }
+
+    .SecondHeroContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 200px;
+        height: 50vh;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .heroPicture {
+        padding-left: 0px;
+    }
+
+
+    .heroContainer img {
+        padding: 0px;
+        padding-top: 50px;
+    }
+
+    .SecondHeroContainer h1 {
+        text-align: center;
+    }
+
+    .SecondHeroText {
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .heroText {
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+    .heroPicture img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .HeroPlaylist {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+}
+
+@media all and (max-width: 550px) {
+    .SecondHeroText h1 {
+        padding-top: 50%;
+        margin: 0px;
+    }
+
+    .SecondHeroContainer {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .heroContainer {
+        padding: 0px;
+    }
+
+    .heroPicture {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .playlistContainer {
+        flex-direction: column;
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+
+}
+
+
+@media all and (max-width: 385px) {
+    .heroContainer {
+        padding: 20px;
+    }
+
+    .playlistContainer {
+        margin-bottom: 20px;
+    }
+
+
+    .SecondHeroContainer {
+        height: 50vh;
+    }
+
+    .SecondHeroText h1 {
+        padding-top: 50%;
+        margin: 0px;
+    }
+
+    .playlistRow {
+        padding-top: 0px;
+    }
 }
