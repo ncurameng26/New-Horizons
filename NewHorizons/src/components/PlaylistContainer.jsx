@@ -1,7 +1,7 @@
 import React from 'react'
 import MusicCard from './MusicCard'
 import "../styles/mainStyles.css"
-import KKSlider from '../assets/KKSlider.jpg'
+import KKSlider from '../assets/kkslider.jpg'
 
 
 
