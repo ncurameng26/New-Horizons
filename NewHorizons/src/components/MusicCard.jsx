@@ -5,9 +5,11 @@ const MusicCard = (props) => {
   return (
     <div className="playlist">
       <div className="enlargeImg">
-        <a href={props.playlistLink}><img src={props.playlistImage} />    </a>
-
+        <div className="card">
+          <a className={props.imageSize} href={props.playlistLink}><img src={props.playlistImage} /></a>
+        </div>
       </div>
+      <h1> {props.playlistName} </h1>
     </div >
   )
 }
