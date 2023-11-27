@@ -9,7 +9,8 @@ const MusicCard = (props) => {
           <a className={props.imageSize} href={props.playlistLink}><img src={props.playlistImage} /></a>
         </div>
       </div>
-      <h1> {props.playlistName} </h1>
+      <h2> {props.playlistName} </h2>
+      <h3> {props.playlistDesc} </h3>
     </div >
   )
 }

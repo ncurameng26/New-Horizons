@@ -2,6 +2,11 @@ import React from 'react'
 import MusicCard from './MusicCard'
 import "../styles/mainStyles.css"
 import KKSlider from '../assets/kkslider.jpg'
+import first from '../assets/1.gif'
+import second from '../assets/2.gif'
+import third from '../assets/3.gif'
+import fourth from '../assets/4.gif'
+
 
 
 
@@ -19,17 +24,22 @@ const PlaylistContainer = () => {
 
 
       <div className="HeroPlaylist">
-        <MusicCard playlistLink={masterPlaylist} playlistImage={KKSlider} playlistName="Master List" />
+        <MusicCard playlistLink={masterPlaylist} playlistImage={KKSlider} playlistName="Master List" playlistDesc="9/11" />
       </div>
 
 
       <div className="playlistRow">
         <div className="playlistContainer">
-          <MusicCard playlistLink={firstPlaylist} playlistImage={KKSlider} playlistName="a lot going on" />
-          <MusicCard playlistLink={secondPlaylist} playlistImage={KKSlider} playlistName="real cowboy hours" />
-          <MusicCard playlistLink={thirdPlaylist} playlistImage={KKSlider} playlistName="Watch Your Mouth" />
-          <MusicCard playlistLink={fourthPlaylist} playlistImage={KKSlider} playlistName="Move In Weekend" />
+          <MusicCard playlistLink={firstPlaylist} playlistImage={first} playlistName="a lot going on" playlistDesc="9/12" />
+          <MusicCard playlistLink={secondPlaylist} playlistImage={second} playlistName="real cowboy hours" playlistDesc="9/13" />
         </div>
+        <div className="placeholder"> &nbsp; </div>
+
+        <div className="playlistContainer">
+          <MusicCard playlistLink={thirdPlaylist} playlistImage={third} playlistName="watch your mouth" playlistDesc="9/14" />
+          <MusicCard playlistLink={fourthPlaylist} playlistImage={fourth} playlistName="move in weekend" playlistDesc="9/15" />
+        </div>
+
       </div>
     </div>
 

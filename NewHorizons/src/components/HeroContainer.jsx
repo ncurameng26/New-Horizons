@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/mainStyles.css"
+import band from "../assets/band.jpg"
 
 const HeroContainer = () => {
   return (
@@ -7,23 +8,25 @@ const HeroContainer = () => {
       <div className="heroPicture">
         <div className="enlargeImg">
           <div className="HeroCard">
-            <img src="https://placehold.co/500x300" />
+            <img style={{ "width": "600px", "height": "400px" }} src={band} />
 
           </div>
 
         </div>
       </div>
       <div className="heroText">
-        <h1> My name is KK slider </h1>
-        <h1>and im a loser </h1>
+        <h1> Expand Your Horizons </h1>
 
-        <h2> Check out my music </h2>
-        <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iure asperiores assumenda deleniti tenetur soluta similique enim molestiae fugit, est magnam illum repellendus maiores aspernatur incidunt hic, exercitationem quisquam qui. </h3>
-        <button class="button-24" role="button" > Contact </button>
+        <h2> I'm Kayla, aka KK-Slider </h2>
+        <h3 style={{ "font-size": "44px", "margin-top": "0px" }}> New Horizons is a free-form radio show featuring altrock, indie, blah blah blah I can write that out </h3>
+        <button class="button-24" role="button" > Listen Now </button>
+        {/* bring to radio website */}
+        {/* prob bring to spotify */}
+        {/* bring to insta */}
 
       </div>
 
-    </div>
+    </div >
 
 
 
