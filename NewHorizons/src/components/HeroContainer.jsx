@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/mainStyles.css"
-import band from "../assets/band.jpg"
+import heroPic from "../assets/heroPic.jpg"
 
 const HeroContainer = () => {
   return (
@@ -8,7 +8,7 @@ const HeroContainer = () => {
       <div className="heroPicture">
         <div className="enlargeImg">
           <div className="HeroCard">
-            <img style={{ "width": "600px", "height": "400px" }} src={band} />
+            <img style={{ "width": "600px", "height": "400px" }} src={heroPic} />
 
           </div>
 
