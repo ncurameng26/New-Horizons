@@ -6,7 +6,7 @@ const MusicCard = (props) => {
     <div className="playlist">
       <div className="enlargeImg">
         <div className="card">
-          <a className={props.imageSize} href={props.playlistLink}><img src={props.playlistImage} /></a>
+          <a className={props.imageSize} href={props.playlistLink}><img className="boxshadow" src={props.playlistImage} /></a>
         </div>
       </div>
       <h2> {props.playlistName} </h2>
